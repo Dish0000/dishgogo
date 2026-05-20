@@ -3,7 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Air Con, CCTV & Smart Home Installs | Auckland</title>
+<title>Air Con Installation Auckland | CCTV &amp; Smart Home | Dish Meng &amp; Co.</title>
+
+<!-- Primary SEO -->
+<meta name="description" content="Auckland&#39;s trusted air conditioning installation, CCTV security, and smart home specialists. Mitsubishi, Gree &amp; more. Residential &amp; commercial. Free site visit — call today.">
+<meta name="keywords" content="air conditioning installation Auckland, heat pump install Auckland, CCTV installation Auckland, smart home Auckland, Mitsubishi air con Auckland, air con service Auckland, residential air conditioning, commercial air conditioning, security camera installation Auckland, Dish Meng">
+<meta name="author" content="Dish Meng &amp; Co.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://dishgogo.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dishgogo.com/">
+<meta property="og:title" content="Air Con Installation Auckland | CCTV &amp; Smart Home | Dish Meng &amp; Co.">
+<meta property="og:description" content="Auckland&#39;s trusted air conditioning installation, CCTV security, and smart home specialists. Residential &amp; commercial. Book a free site visit today.">
+<meta property="og:image" content="https://dishgogo.com/og-image.jpg">
+<meta property="og:locale" content="en_NZ">
+<meta property="og:site_name" content="Dish Meng &amp; Co.">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Air Con Installation Auckland | Dish Meng &amp; Co.">
+<meta name="twitter:description" content="Auckland&#39;s trusted air conditioning, CCTV &amp; smart home specialists. Free site visit available.">
+<meta name="twitter:image" content="https://dishgogo.com/og-image.jpg">
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Dish Meng & Co.",
+  "url": "https://dishgogo.com",
+  "description": "Auckland air conditioning installation, CCTV security and smart home specialists. Residential and commercial services.",
+  "telephone": "",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Auckland",
+    "addressCountry": "NZ"
+  },
+  "areaServed": "Auckland",
+  "serviceType": ["Air Conditioning Installation", "CCTV Installation", "Smart Home Installation", "AC Servicing"],
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 08:00-18:00"
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -40,11 +83,9 @@
   }
 
   .nav-logo {
-    font-family: 'Playfair Display', serif;
-    color: var(--gold);
-    font-size: 1.3rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    line-height: 1;
   }
 
   .nav-links {
@@ -597,6 +638,139 @@
     line-height: 1.6;
   }
 
+  /* PRICING */
+  .pricing { padding: 7rem 6%; background: var(--navy); }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3.5rem;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 4px;
+    padding: 2.4rem 2rem;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  }
+
+  .pricing-card.featured {
+    border-color: var(--gold);
+    background: rgba(201,168,76,0.07);
+  }
+
+  .pricing-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .pricing-capacity {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+
+  .pricing-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--white);
+    margin-bottom: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .pricing-brands {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.6rem;
+  }
+
+  .pricing-brand-tag {
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.75);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  .pricing-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .pricing-price span {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .pricing-gst {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 1.6rem;
+  }
+
+  .pricing-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .pricing-features li {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.65);
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .pricing-features li::before {
+    content: '✓';
+    color: var(--gold);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .pricing-note {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
+  }
+
   /* PROJECTS */
   .projects { padding: 7rem 6%; background: var(--navy); }
 
@@ -707,9 +881,48 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Dish Meng & Co.</div>
+  <div class="nav-logo">
+    <svg width="180" height="44" viewBox="0 0 180 44" xmlns="http://www.w3.org/2000/svg" aria-label="Dish Meng & Co.">
+      <!-- Bridge icon -->
+      <g transform="translate(22,26)">
+        <!-- Roadway -->
+        <rect x="-19" y="10" width="38" height="4" rx="0.5" fill="#8a4a10"/>
+        <rect x="-19" y="8.5" width="38" height="3" rx="0.5" fill="#a05618"/>
+        <!-- Left tower -->
+        <rect x="-11.5" y="-18" width="5" height="28" rx="0.5" fill="#c47830"/>
+        <rect x="-12.5" y="-19.5" width="7" height="3" rx="0.5" fill="#d4893a"/>
+        <rect x="-11" y="-22" width="4" height="4" rx="0.5" fill="#c9a84c"/>
+        <!-- Right tower -->
+        <rect x="6.5" y="-18" width="5" height="28" rx="0.5" fill="#c47830"/>
+        <rect x="5.5" y="-19.5" width="7" height="3" rx="0.5" fill="#d4893a"/>
+        <rect x="7" y="-22" width="4" height="4" rx="0.5" fill="#c9a84c"/>
+        <!-- M diagonals (gold) -->
+        <line x1="-9" y1="-18" x2="0" y2="-6" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="9" y1="-18" x2="0" y2="-6" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round"/>
+        <!-- centre diamond -->
+        <polygon points="0,-3.5 2,-6 0,-8.5 -2,-6" fill="#c9a84c"/>
+        <!-- Outer cables -->
+        <path d="M-9,-18 Q-14,0 -19,8.5" fill="none" stroke="#c9a84c" stroke-width="1" stroke-linecap="round" opacity="0.55"/>
+        <path d="M9,-18 Q14,0 19,8.5" fill="none" stroke="#c9a84c" stroke-width="1" stroke-linecap="round" opacity="0.55"/>
+        <!-- Hangers -->
+        <line x1="-15" y1="4" x2="-15" y2="9" stroke="#c9a84c" stroke-width="0.7" opacity="0.5"/>
+        <line x1="-6" y1="-8" x2="-6" y2="9" stroke="#c9a84c" stroke-width="0.7" opacity="0.4"/>
+        <line x1="6" y1="-8" x2="6" y2="9" stroke="#c9a84c" stroke-width="0.7" opacity="0.4"/>
+        <line x1="15" y1="4" x2="15" y2="9" stroke="#c9a84c" stroke-width="0.7" opacity="0.5"/>
+        <!-- Water -->
+        <rect x="-19" y="14" width="38" height="6" rx="1" fill="#0a1624" opacity="0.6"/>
+        <line x1="-16" y1="16.5" x2="-6" y2="16.5" stroke="#1d4a7a" stroke-width="0.6" opacity="0.5"/>
+        <line x1="4" y1="18" x2="16" y2="18" stroke="#1d4a7a" stroke-width="0.6" opacity="0.5"/>
+      </g>
+      <!-- Wordmark -->
+      <text x="50" y="18" font-family="'Playfair Display', Georgia, serif" font-size="14" font-weight="700" fill="#c9a84c" letter-spacing="0.3">Dish Meng &amp; Co.</text>
+      <line x1="50" y1="22" x2="176" y2="22" stroke="#c9a84c" stroke-width="0.6" opacity="0.5"/>
+      <text x="50" y="32" font-family="'DM Sans', Arial, sans-serif" font-size="7" font-weight="400" fill="#c9a84c" letter-spacing="1.5" opacity="0.75">AUCKLAND, NEW ZEALAND</text>
+    </svg>
+  </div>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
     <li><a href="#products">Products</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#quote">Get a Quote</a></li>
@@ -794,6 +1007,65 @@
 </section>
 
 <!-- PRODUCTS -->
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="section-header">
+    <div class="section-tag">Special Offer</div>
+    <h2 class="section-title" style="color:var(--white);">Supply &amp; Install Packages</h2>
+    <p style="color:rgba(255,255,255,0.5); margin-top:1rem; font-size:0.95rem;">Premium brands, professional installation — all included.</p>
+  </div>
+
+  <div class="pricing-grid">
+
+    <!-- 2.5kw -->
+    <div class="pricing-card">
+      <div class="pricing-capacity">2.5 kW</div>
+      <div class="pricing-title">Single Room<br>Heat Pump</div>
+      <div class="pricing-brands">
+        <span class="pricing-brand-tag">Daikin</span>
+        <span class="pricing-brand-tag">Mitsubishi</span>
+        <span class="pricing-brand-tag">Panasonic</span>
+      </div>
+      <div class="pricing-price"><span>$</span>1,600</div>
+      <div class="pricing-gst">+ GST &nbsp;·&nbsp; Supply &amp; Install</div>
+      <ul class="pricing-features">
+        <li>Ideal for bedrooms &amp; small rooms</li>
+        <li>Premium brand unit included</li>
+        <li>Professional installation</li>
+        <li>Up to 25m² coverage</li>
+        <li>1-year installation warranty</li>
+        <li>5-year product warranty</li>
+      </ul>
+      <a href="#quote" class="btn-primary" style="display:inline-block; padding:0.8rem 2rem; font-size:0.9rem;">Get a Quote</a>
+    </div>
+
+    <!-- 5kw -->
+    <div class="pricing-card featured">
+      <div class="pricing-badge">Most Popular</div>
+      <div class="pricing-capacity">5.0 kW</div>
+      <div class="pricing-title">Living Area<br>Heat Pump</div>
+      <div class="pricing-brands">
+        <span class="pricing-brand-tag">Daikin</span>
+        <span class="pricing-brand-tag">Mitsubishi</span>
+        <span class="pricing-brand-tag">Panasonic</span>
+      </div>
+      <div class="pricing-price"><span>$</span>1,800</div>
+      <div class="pricing-gst">+ GST &nbsp;·&nbsp; Supply &amp; Install</div>
+      <ul class="pricing-features">
+        <li>Ideal for lounge &amp; open-plan areas</li>
+        <li>Premium brand unit included</li>
+        <li>Professional installation</li>
+        <li>Up to 50m² coverage</li>
+        <li>1-year installation warranty</li>
+        <li>5-year product warranty</li>
+      </ul>
+      <a href="#quote" class="btn-primary" style="display:inline-block; padding:0.8rem 2rem; font-size:0.9rem;">Get a Quote</a>
+    </div>
+
+  </div>
+  <p class="pricing-note">* Prices are indicative. Final price confirmed after free site visit. Additional charges may apply for complex installations.</p>
+</section>
+
 <section class="products" id="products">
   <div class="section-header">
     <div class="section-tag">What We Supply</div>
