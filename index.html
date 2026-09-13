@@ -453,6 +453,23 @@ src="https://www.facebook.com/tr?id=994417053006436&ev=PageView&noscript=1"/></n
     border-color: var(--gold);
   }
 
+  .service-photo {
+    width: 100%;
+    height: 170px;
+    background: var(--navy);
+  }
+
+  .service-photo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(13,27,42,0.05), rgba(201,168,76,0.12));
+  }
+
+  .service-card-body {
+    padding: 1.8rem 1.6rem 2.2rem;
+  }
+
   .service-icon {
     font-size: 2.2rem;
     margin-bottom: 1.2rem;
@@ -1105,8 +1122,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 
 <!-- BRAND BANNER -->
-<div style="margin-top:88px; background:var(--navy); line-height:0;">
-  <img src="dish-meng-bathroom-banner.png" alt="Dish Meng & Co. — One-Stop Bathroom Renovations, Auckland New Zealand. Demolition to finishing · Plumbing · Electrical · Tiling" style="width:100%; display:block;">
+<div style="margin-top:88px; position:relative; aspect-ratio:5/2; max-height:420px; overflow:hidden; background:url('case-photos/after-finished-bathroom.jpeg') center 28% / cover no-repeat;">
+  <div style="position:absolute; inset:0; background:linear-gradient(100deg, rgba(13,27,42,0.95) 0%, rgba(13,27,42,0.82) 38%, rgba(13,27,42,0.35) 72%, rgba(13,27,42,0.08) 100%);"></div>
+  <div style="position:relative; height:100%; display:flex; flex-direction:column; justify-content:center; padding:2rem 6%; max-width:680px;">
+    <div style="font-family:'Playfair Display',serif; font-size:clamp(1.8rem, 4vw, 2.8rem); color:var(--white); font-weight:700; line-height:1.1;">Dish Meng &amp; Co.</div>
+    <div style="width:100px; height:1px; background:var(--gold); margin:1rem 0 0.9rem;"></div>
+    <div style="color:var(--gold); letter-spacing:0.12em; font-size:clamp(0.8rem, 1.4vw, 1rem); margin-bottom:0.5rem; font-weight:500;">AUCKLAND, NEW ZEALAND</div>
+    <div style="color:var(--white); font-size:clamp(1rem, 2.2vw, 1.35rem); font-weight:600; margin-bottom:0.5rem;">ONE-STOP BATHROOM RENOVATIONS</div>
+    <div style="color:rgba(255,255,255,0.72); font-size:clamp(0.72rem, 1.1vw, 0.88rem); letter-spacing:0.04em;">DEMOLITION TO FINISHING &nbsp;·&nbsp; PLUMBING &nbsp;·&nbsp; ELECTRICAL &nbsp;·&nbsp; TILING</div>
+  </div>
 </div>
 
 <!-- HERO -->
@@ -1155,40 +1179,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="section-title">Our Services</h2>
   </div>
   <div class="services-grid">
-    <div class="service-card" style="border-color:var(--gold); box-shadow:0 12px 34px rgba(201,168,76,0.15);">
-      <span class="service-icon">🛁</span>
-      <div class="service-title">Bathroom Renovation</div>
-      <p class="service-desc">Complete bathroom renovations from design to final fit-out — waterproofing, tiling, plumbing, vanities and fixtures. One team, start to finish.</p>
+    <div class="service-card" style="padding:0; overflow:hidden; border-color:var(--gold); box-shadow:0 12px 34px rgba(201,168,76,0.15);">
+      <div class="service-photo">
+        <img src="case-photos/tiling-shower-tray.jpeg" alt="Bathroom renovation — shower tray tiling" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+      <div class="service-card-body">
+        <div class="service-title">Bathroom Renovation</div>
+        <p class="service-desc">Complete bathroom renovations from design to final fit-out — waterproofing, tiling, plumbing, vanities and fixtures. One team, start to finish.</p>
+      </div>
     </div>
-    <div class="service-card">
-      <span class="service-icon">❄️</span>
-      <div class="service-title">Air Conditioning Supply & Install</div>
-      <p class="service-desc">We supply and professionally install heat pumps and air conditioning systems for homes and businesses — efficient, quiet and built to last.</p>
+    <!-- PHOTO SLOT: air-conditioning -->
+    <div class="service-card" style="padding:0; overflow:hidden;">
+      <div class="service-photo">
+        <img src="case-photos/aircon-daikin-indoor-unit.jpeg" alt="Daikin air conditioning indoor unit, professionally installed" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+      <div class="service-card-body">
+        <div class="service-title">Air Conditioning Supply, Install & Servicing</div>
+        <p class="service-desc">We supply and professionally install heat pumps and air conditioning systems for homes and businesses, plus ongoing servicing and maintenance to keep them running efficiently for years to come.</p>
+      </div>
     </div>
-    <div class="service-card">
-      <span class="service-icon">🔧</span>
-      <div class="service-title">AC Servicing & Maintenance</div>
-      <p class="service-desc">Regular servicing, deep cleaning and maintenance to keep your air conditioning running at peak performance and extend its lifespan.</p>
+    <!-- PHOTO SLOT: cctv -->
+    <div class="service-card" style="padding:0; overflow:hidden;">
+      <div class="service-photo service-photo-placeholder"><span class="service-icon">📹</span></div>
+      <div class="service-card-body">
+        <div class="service-title">CCTV Supply & Installation</div>
+        <p class="service-desc">Full CCTV security camera systems supplied and installed for residential and commercial properties — protect what matters most.</p>
+      </div>
     </div>
-    <div class="service-card">
-      <span class="service-icon">📹</span>
-      <div class="service-title">CCTV Supply & Installation</div>
-      <p class="service-desc">Full CCTV security camera systems supplied and installed for residential and commercial properties — protect what matters most.</p>
+    <!-- PHOTO SLOT: smart-toilet-seat -->
+    <div class="service-card" style="padding:0; overflow:hidden;">
+      <div class="service-photo service-photo-placeholder"><span class="service-icon">🚿</span></div>
+      <div class="service-card-body">
+        <div class="service-title">Smart Toilet Seat Supply & Install</div>
+        <p class="service-desc">Premium smart toilet seats supplied and fitted — featuring heated seats, bidet wash, dryer and more for ultimate comfort.</p>
+      </div>
     </div>
-    <div class="service-card">
-      <span class="service-icon">🚿</span>
-      <div class="service-title">Smart Toilet Seat Supply & Install</div>
-      <p class="service-desc">Premium smart toilet seats supplied and fitted — featuring heated seats, bidet wash, dryer and more for ultimate comfort.</p>
+    <!-- PHOTO SLOT: residential -->
+    <div class="service-card" style="padding:0; overflow:hidden;">
+      <div class="service-photo service-photo-placeholder"><span class="service-icon">🏠</span></div>
+      <div class="service-card-body">
+        <div class="service-title">Residential Solutions</div>
+        <p class="service-desc">Comprehensive home upgrades covering air con, security and bathroom technology — all from one trusted provider in Auckland.</p>
+      </div>
     </div>
-    <div class="service-card">
-      <span class="service-icon">🏠</span>
-      <div class="service-title">Residential Solutions</div>
-      <p class="service-desc">Comprehensive home upgrades covering air con, security and bathroom technology — all from one trusted provider in Auckland.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">🏢</span>
-      <div class="service-title">Commercial Solutions</div>
-      <p class="service-desc">Scalable installations for offices, retail shops and commercial premises. We handle the full project from supply to completion.</p>
+    <!-- PHOTO SLOT: commercial -->
+    <div class="service-card" style="padding:0; overflow:hidden;">
+      <div class="service-photo service-photo-placeholder"><span class="service-icon">🏢</span></div>
+      <div class="service-card-body">
+        <div class="service-title">Commercial Solutions</div>
+        <p class="service-desc">Scalable installations for offices, retail shops and commercial premises. We handle the full project from supply to completion.</p>
+      </div>
     </div>
   </div>
 </section>
